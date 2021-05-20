@@ -39,13 +39,13 @@ az vm create \
   --vnet-name benDemoVnet \
   --subnet benDemoSubnet
 ```
-default user here is `bunyamin`. to specify username `--admin-username azureuserblabla`
+default user here is `ben`. to specify username `--admin-username azureuserblabla`
 
 
 - if you want to connect to the vm: Provide a path to your SSH private key file. Private key path: `~/.ssh/bunyamin` Run the example command below to connect to your VM.
 
 ``` 
-ssh -i <private key path> bunyamin@bendemopublicdns.westeurope.cloudapp.azure.com
+ssh -i <private key path> ben@bendemopublicdns.westeurope.cloudapp.azure.com
 ```
 
 
@@ -73,14 +73,14 @@ az postgres server create \
   --resource-group benDemoResourceGroup \
   --name benDemoPostgres01 \
   --location westeurope \
-  --admin-user bunyamin \
-  --admin-password Mytestpostgres123 \
+  --admin-user ben \
+  --admin-password xxxxxxxxx \
   --sku-name B_Gen5_1
   --storage-size 10240
 ```
 ...but it didnt like this format. try one liner:
 ```
-az postgres server create   --resource-group benDemoResourceGroup  --name benDemoPostgres01  --location westeurope  --admin-user bunyamin --admin-password Mytestpostgres123 --sku-name B_Gen5_1 --storage-size 10240
+az postgres server create   --resource-group benDemoResourceGroup  --name benDemoPostgres01  --location westeurope  --admin-user ben --admin-password xxxxxxxx --sku-name B_Gen5_1 --storage-size 10240
 ```
 for general purpose tier use: `--sku-name GP_Gen5_2`
 
