@@ -42,7 +42,7 @@ az vm create \
 default user here is `ben`. to specify username `--admin-username azureuserblabla`
 
 
-- if you want to connect to the vm: Provide a path to your SSH private key file. Private key path: `~/.ssh/bunyamin` Run the example command below to connect to your VM.
+- if you want to connect to the vm: Provide a path to your SSH private key file. Private key path: `~/.ssh/ben` Run the example command below to connect to your VM.
 
 ``` 
 ssh -i <private key path> ben@bendemopublicdns.westeurope.cloudapp.azure.com
